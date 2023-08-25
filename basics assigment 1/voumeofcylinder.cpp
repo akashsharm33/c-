@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    float r,h;
-    cin>>r>>h;
-    float v=3.14*r*r*h;
-    cout<<v;
+    ch ch1,ch2;
+    cout<<"ënter characters"<<endl;
+    cin>>ch1>>ch2;
+    cout<<"diff"<<ch1-ch2;<<endl;
 }
