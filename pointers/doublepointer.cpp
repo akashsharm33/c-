@@ -7,4 +7,5 @@ int main(){
     cout<<&x<<endl;
     cout<<ptr<<endl;//x ka address
     cout<<*p<<endl;//ptr ka address
+    cout<<**p;
 }

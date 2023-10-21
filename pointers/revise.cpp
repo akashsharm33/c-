@@ -1,10 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int x=4;
-    int*ptr1=&x;
-    int**ptr2=&ptr1;
-    int***ptr3=&ptr2;
-    int****ptr4=&ptr3;
-    cout<<x<<endl<<*ptr1<<endl<<**ptr2<<endl<<***ptr3<<endl<<****ptr4;
+    int x,y;
+    int *p1=&x;
+    int *p2=&y;
+    cout<<"number dalre";
+    cin>>*p1>>*p2;
+    cout<<(*p1)*(*p2);
+
 }

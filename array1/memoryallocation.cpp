@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[5];
+    int arr[5]; // array first element address is the address of whole array;
     cout<<&arr[0]<<endl;
     cout<<&arr[1]<<endl;
     cout<<&arr[2]<<endl;

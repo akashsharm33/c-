@@ -11,7 +11,7 @@ int main(){
     int x;
     cout<<"enter element you want";
     cin>>x;
-    //checkmark  
+    //checkmark  ;;
     bool flag= false; //not present;  
     for(int i=0;i<n;i++){
         if(arr[i]==x)flag=true;

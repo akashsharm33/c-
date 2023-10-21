@@ -11,7 +11,7 @@ int main(){
     int r;
     cout<<"enter r";
     cin>>r;
-    int a=area(r);
-    cout<<a;
+    //int a=area(r);
+    cout<<area(r);
     
 }

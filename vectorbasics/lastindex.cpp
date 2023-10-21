@@ -18,7 +18,7 @@ int main(){
     }
 cout<<idx;
 }
-//from backward side searching
+//from backward side searching step 2
 for(int i=v.size()-1;i>=0;i--){
     if(v[i]==x){
         idx=i;
