@@ -12,8 +12,8 @@ int main(){
     v.push_back(9); //7 8
     v.push_back(10); //8 8
     v.push_back(6); //9 16
-    v.push_back(1);
-    v.push_back(9);
+    v.push_back(1);//10 16
+    v.push_back(9);//11 16;
     cout<<"size is"<<v.size()<<endl;
     cout<<"capacity "<<v.capacity()<<endl;
     v.pop_back();

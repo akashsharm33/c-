@@ -1,24 +1,31 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(){
-    int x;
-    cout<<"enter the target";
-    cin>>x;
-    vector<int>v;
-    int n;
-    cout<<"enter the size of the array";
-    cin>>n;
-    cout<<"enter the number of elements";
+void display(vector<int>&v){
     for(int i=0;i<v.size();i++){
-        int q;
-        cin>>q;
-        v.push_back(q);
-            }
-    for(int i=0;i<=v.size()-2;i++){
-        for(int j=i+1;j<=v.size()-1;j++){
-            if(v[i]+v[j]==x)
-            cout<<"("<<i<<","<<j<<")"<<endl;
-        }
+        cout<<v[i]<<" ";
     }
+    cout<<endl;
+}
+void reverseapart(int i,int j,vector<int>&v){
+    
+        while(i<=j){
+            int t=v[i];
+            v[i]=v[j];
+            v[j]=t;
+            i++;
+            j--;
+        }
+}
+int main(){
+    vector<int>v;
+    v.push_back(1);
+     v.push_back(2);
+      v.push_back(3);
+       v.push_back(4);
+        v.push_back(5);
+        display(v);
+        reverseapart(0,2,v);
+        display(v);
+        
 }

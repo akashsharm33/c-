@@ -1,26 +1,14 @@
 #include<iostream>
 #include<algorithm>
+#include<string>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];
+    string s="AZXEFGH";
+    string str;
+    for(int i=0;i<s.length();i++){
+        if(s[i]>='X')
+        str.push_back(s[i]);
     }
-    for(int i=0;i<n-1;i++){
-        bool flag=false;
-        for(int j=0;j<n-1-i;j++){
-            if(arr[j]>arr[j+1]){
-                swap(arr[j],arr[j+1]);
-                flag=false;
-            }
-        }
-        if(flag==true) break;
-    }
-    for(int i=0;i<n;i++)
-    {
-        cout<<arr[i];
-    }
+    sort(str.begin(),str.end());
+    cout<<str;
 }
